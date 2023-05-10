@@ -1,0 +1,53 @@
+\hypertarget{course_8h_source}{}\doxysection{course.\+h}
+\mbox{\hyperlink{course_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ COURSE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ COURSE\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QSet>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QMap>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_course}{Course}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ QString\ name,code,lectureHall,time;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ no\_of\_courses;}
+\DoxyCodeLine{00017\ \ \ \ \ QMap<QString,\ float>\ students;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ dayHallTime[5][5][5];}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_aa445a07815e69bdcf33633e73890288f}{setDayHallTime}}(\textcolor{keywordtype}{int}\ d,\textcolor{keywordtype}{int}\ h,\textcolor{keywordtype}{int}\ t,\textcolor{keywordtype}{bool}\ value);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_course_a3c2de244fbf59f18704854b0094cf76f}{getDayHallTime}}(\textcolor{keywordtype}{int}\ d,\textcolor{keywordtype}{int}\ h,\textcolor{keywordtype}{int}\ t);}
+\DoxyCodeLine{00023\ \ \ \ \ QSet<QString>\ \mbox{\hyperlink{class_course_a24913f3deb96dba102f8d7921f941001}{professors}};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{static}\ QMap<QString,Course>\ \mbox{\hyperlink{class_course_a024d0c8626101e081dabbafa694647a7}{courses}};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ QSet<QString>\ \mbox{\hyperlink{class_course_a930dd320b478326fbb0035257412df08}{courses\_names}};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ QSet<QString>\ \mbox{\hyperlink{class_course_a966a09b166c124568fe4e68bc61aeb70}{courses\_codes}};}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_course_a6b959ccf15d9ceed9e9c14a701561982}{Course}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_course_a6b959ccf15d9ceed9e9c14a701561982}{Course}}(QString\ newName,QString\ newCode\ ,\ QString\ newLectureHall\ ,QString\ newTime\ );}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_course_a6b959ccf15d9ceed9e9c14a701561982}{Course}}(QString\ newName,QString\ newCode\ ,\ QString\ newLectureHall\ ,QString\ newTime\ ,QMap<QString,float>newStudents,QSet<QString>newProfessors);}
+\DoxyCodeLine{00030\ \ \ \ \ QString\ \mbox{\hyperlink{class_course_aa2590d290eafdb4145d2326e0cc1fc48}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_a2d4edc41724eeba052d0b6d34fbb6495}{setName}}(QString\ newName);}
+\DoxyCodeLine{00032\ \ \ \ \ QString\ \mbox{\hyperlink{class_course_a78a93975fbd2ca0213a5f6b2f05de493}{getCode}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_aadbc31e0d97595b426fc28550f0c27d5}{setCode}}(QString\ newCode);}
+\DoxyCodeLine{00034\ \ \ \ \ QString\ \mbox{\hyperlink{class_course_a4116bf4fd9caa0500278aa32885da0d3}{getLectureHall}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_a535f848d26a769fdcc4de9f64a87ad4e}{setLectureHAll}}(QString\ newLectureHall);}
+\DoxyCodeLine{00036\ \ \ \ \ QString\ \mbox{\hyperlink{class_course_af1f9bd2df7c40cffc2cb7fd95d7ce6c2}{getTime}}();}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_aba087a5be3e7d6b4949fe87d2e18bf66}{setTime}}(QString\ newTime);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_a75184776601f827263bee2b2cc4af5e2}{addProfessor}}(QString\ profName);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classadd_student}{addStudent}}(QString\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{float}\ grade);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_a8c79a05dbf10bc653b831d24a7c6bb8d}{deleteStudent}}\ (QString\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_course_a78d51fa4a332b31cbd3646e34ccd3b8b}{getNumberOfCourses}}();}
+\DoxyCodeLine{00042\ \ \ \ \ QMap<QString,\ float>\ \mbox{\hyperlink{class_course_ab7b6805b51aa36c5f3dd9473e7897594}{getStudents}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_a0f01e3df73dd02f43c07755d84671114}{export\_to\_csv}}(QString\ path);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_a40d1a0cd976e1b0064d267f8b4bfcdb3}{import\_from\_csv}}(QString\ path);}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_course_ac23c246f501bf20d4a2bf092a940623e}{deleteProf}}(QString\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ COURSE\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,29 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [label="QWidget",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="steelblue1",style="solid"];
+  Node1 [label="AuthWindow",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_auth_window.html",tooltip=" "];
+  Node0 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="Card",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_card.html",tooltip=" "];
+  Node0 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="CoursesTab",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_courses_tab.html",tooltip=" "];
+  Node0 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="EditStudent",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_edit_student.html",tooltip=" "];
+  Node0 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="SignUpWindow",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_sign_up_window.html",tooltip=" "];
+  Node0 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="StudentsTab",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_students_tab.html",tooltip=" "];
+  Node0 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="addStudent",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classadd_student.html",tooltip=" "];
+  Node0 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="displayCourse",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdisplay_course.html",tooltip=" "];
+  Node0 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="editCourse",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classedit_course.html",tooltip=" "];
+  Node0 -> Node10 [dir="back",color="steelblue1",style="solid"];
+  Node10 [label="editProfessor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classedit_professor.html",tooltip=" "];
+}

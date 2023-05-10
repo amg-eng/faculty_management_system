@@ -1,0 +1,13 @@
+digraph "editCourse::editCourse"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="editCourse::editCourse",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="edit information of the course"];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="editCourse::buildComboBox",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classedit_course.html#add60584fd6fe8a1656b5e1f2254e1489",tooltip="buildComboBox with avilable days, halls and times"];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="Course::getDayHallTime",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_course.html#a3c2de244fbf59f18704854b0094cf76f",tooltip="Course::getDayHallTime -> function to get the hall, day, and time of the course."];
+}

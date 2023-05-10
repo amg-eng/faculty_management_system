@@ -1,0 +1,11 @@
+digraph "addcourse2::buildComboBox"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="addcourse2::buildComboBox",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="addcourse2::buildComboBox – function name to add the items to the combobox for time and check if the ..."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="addcourse2::addcourse2",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classaddcourse2.html#a86fb1205ea55c358cd0799209093bb61",tooltip="constructor of the class addcourse2(ui widget for adding new course)"];
+}

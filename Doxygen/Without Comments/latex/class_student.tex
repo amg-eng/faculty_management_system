@@ -1,0 +1,234 @@
+\hypertarget{class_student}{}\doxysection{Student Class Reference}
+\label{class_student}\index{Student@{Student}}
+
+
+{\ttfamily \#include $<$student.\+h$>$}
+
+
+
+Inheritance diagram for Student\+:
+% FIG 0
+
+
+Collaboration diagram for Student\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student}} ()
+\item 
+\mbox{\hyperlink{class_student_a8c4f3952236552ace268876d2ff0bdde}{Student}} (QString new\+First\+Name, QString new\+Second\+Name, QString new\+Phone\+Number, QString new\+Email, int new\+Age, QString \mbox{\hyperlink{class_student_ae407f416c573094e48fa6631b4f79910}{year}})
+\item 
+\mbox{\hyperlink{class_student_a4e8df2107d13aadbf219e46161069548}{Student}} (QString new\+First\+Name, QString new\+Second\+Name, QString new\+Phone\+Number, QString new\+Email, int new\+Age, QString \mbox{\hyperlink{class_student_ae407f416c573094e48fa6631b4f79910}{year}}, QMap$<$ QString, float $>$ \mbox{\hyperlink{class_student_a614dd9d2df88fd5838c32e25e92f5685}{course\+\_\+grads}})
+\item 
+void \mbox{\hyperlink{class_student_ad5bb3334d9e15d5210876b8fef668f0c}{set\+Year}} (QString \mbox{\hyperlink{class_student_ae407f416c573094e48fa6631b4f79910}{year}})
+\item 
+QString \mbox{\hyperlink{class_student_a6a0eb5f79400f8bafa246b3ea80fe9a4}{get\+Year}} () const
+\item 
+void \mbox{\hyperlink{class_student_ad64185e5d184ddaa6648da6aa4f414ec}{remove\+Course\+From\+Student}} (QString c)
+\item 
+void \mbox{\hyperlink{class_student_ac3298026cd7d6cbf3e95af3ef406a5f1}{add\+Course\+To\+Student}} (QString c, float d)
+\item 
+void \mbox{\hyperlink{class_student_a11b83bf608c5b079740e28557931ba68}{get\+Information}} ()
+\item 
+QString \mbox{\hyperlink{class_student_aa5cc1aaf1403fd407a509466486a591c}{get\+Id}} () const
+\item 
+QMap$<$ QString, float $>$ \mbox{\hyperlink{class_student_a6e0fd1ea1ba4fb2d6f14062859ab6ef4}{get\+\_\+course\+\_\+grads}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_person_a0397c6f89fafc12e738923f612bc41a3}{Person}} ()
+\item 
+\mbox{\hyperlink{class_person_a27d593b7e8fe2a4a8f6e5d6a213c87a4}{Person}} (QString new\+First\+Name, QString new\+Second\+Name, QString new\+Phone\+Number, QString new\+Email, int new\+Age)
+\item 
+int \mbox{\hyperlink{class_person_a69b1611320c68967067747c91783d883}{get\+Age}} ()
+\item 
+void \mbox{\hyperlink{class_person_ad45f0876030e071957981ea71a557981}{set\+Age}} (int new\+Age)
+\item 
+QString \& \mbox{\hyperlink{class_person_ae38ba05864d3ee3bc55e6c6905a5d4c1}{get\+First\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_person_afb6a7dad679e73ca36eb8c0af39c458f}{set\+First\+Name}} (QString \&new\+First\+Name)
+\item 
+QString \& \mbox{\hyperlink{class_person_a2d91259305c82d847edfe63c3865de71}{get\+Second\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_person_aba23fed94508c4eefe53d58e51b6570b}{set\+Second\+Name}} (QString \&new\+Second\+Name)
+\item 
+QString \& \mbox{\hyperlink{class_person_adbc540af5e9b85c701081e164c2ba676}{get\+Phone\+Number}} ()
+\item 
+void \mbox{\hyperlink{class_person_a9b133a54cdc50d376a2f302417f04b10}{set\+Phone\+Number}} (QString \&new\+Phone\+Number)
+\item 
+QString \& \mbox{\hyperlink{class_person_aef114831d45fa79321ccaf5e114ac663}{get\+Email}} ()
+\item 
+void \mbox{\hyperlink{class_person_ab153296eecdb1d90e98b96c57ea19d88}{set\+Email}} (QString \&new\+Email)
+\item 
+QString \mbox{\hyperlink{class_person_ac12d93a1f835711e5608693bf4abe1bc}{get\+\_\+full\+\_\+name}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_student_a410d5568f4c142de66c45ee035683c15}{get\+No\+\_\+of\+\_\+students}} ()
+\item 
+static void \mbox{\hyperlink{class_student_a54888c24615b9a5314fd4d610d3897a4}{import\+From\+Csv\+File}} (QString path)
+\item 
+static void \mbox{\hyperlink{class_student_a368cb70a40812321893cbcbda3a3a772}{export\+To\+Csv\+File}} (QString path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static QMap$<$ QString, \mbox{\hyperlink{class_student}{Student}} $>$ \mbox{\hyperlink{class_student_a377a9f2d155bb5ac02b3dcedaacdd504}{students}} =\{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_student_ae407f416c573094e48fa6631b4f79910}{year}}
+\item 
+QMap$<$ QString, float $>$ \mbox{\hyperlink{class_student_a614dd9d2df88fd5838c32e25e92f5685}{course\+\_\+grads}}
+\item 
+QString \mbox{\hyperlink{class_student_a6c81c9bf59d0621063f131c7745284ec}{id}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_person_aaccf91d74ec333ff725af78ffbe429f9}{first\+Name}}
+\item 
+QString \mbox{\hyperlink{class_person_a2518048e1cfb80c4414a506ccf406751}{second\+Name}}
+\item 
+QString \mbox{\hyperlink{class_person_a2e27c9f2755a43c8eae08c7c47cbf4f2}{phone\+Number}}
+\item 
+QString \mbox{\hyperlink{class_person_a72f5f93f2b969a0cadb985af14b85dd9}{email}}
+\item 
+int \mbox{\hyperlink{class_person_acf9db1a60683f40b20ae569d29852d69}{age}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_student_afccdec47b8494573fffd96de29ae8bf8}{no\+\_\+of\+\_\+students}} =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}\label{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}} 
+\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_student_a8c4f3952236552ace268876d2ff0bdde}\label{class_student_a8c4f3952236552ace268876d2ff0bdde}} 
+\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}\item[{QString}]{new\+First\+Name,  }\item[{QString}]{new\+Second\+Name,  }\item[{QString}]{new\+Phone\+Number,  }\item[{QString}]{new\+Email,  }\item[{int}]{new\+Age,  }\item[{QString}]{year }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_student_a4e8df2107d13aadbf219e46161069548}\label{class_student_a4e8df2107d13aadbf219e46161069548}} 
+\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}\item[{QString}]{new\+First\+Name,  }\item[{QString}]{new\+Second\+Name,  }\item[{QString}]{new\+Phone\+Number,  }\item[{QString}]{new\+Email,  }\item[{int}]{new\+Age,  }\item[{QString}]{year,  }\item[{QMap$<$ QString, float $>$}]{course\+\_\+grads }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_student_ac3298026cd7d6cbf3e95af3ef406a5f1}\label{class_student_ac3298026cd7d6cbf3e95af3ef406a5f1}} 
+\index{Student@{Student}!addCourseToStudent@{addCourseToStudent}}
+\index{addCourseToStudent@{addCourseToStudent}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{addCourseToStudent()}{addCourseToStudent()}}
+{\footnotesize\ttfamily void Student\+::add\+Course\+To\+Student (\begin{DoxyParamCaption}\item[{QString}]{c,  }\item[{float}]{d = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_student_a368cb70a40812321893cbcbda3a3a772}\label{class_student_a368cb70a40812321893cbcbda3a3a772}} 
+\index{Student@{Student}!exportToCsvFile@{exportToCsvFile}}
+\index{exportToCsvFile@{exportToCsvFile}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{exportToCsvFile()}{exportToCsvFile()}}
+{\footnotesize\ttfamily void Student\+::export\+To\+Csv\+File (\begin{DoxyParamCaption}\item[{QString}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_student_a6e0fd1ea1ba4fb2d6f14062859ab6ef4}\label{class_student_a6e0fd1ea1ba4fb2d6f14062859ab6ef4}} 
+\index{Student@{Student}!get\_course\_grads@{get\_course\_grads}}
+\index{get\_course\_grads@{get\_course\_grads}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{get\_course\_grads()}{get\_course\_grads()}}
+{\footnotesize\ttfamily QMap$<$ QString, float $>$ Student\+::get\+\_\+course\+\_\+grads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_student_aa5cc1aaf1403fd407a509466486a591c}\label{class_student_aa5cc1aaf1403fd407a509466486a591c}} 
+\index{Student@{Student}!getId@{getId}}
+\index{getId@{getId}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily QString Student\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_student_a11b83bf608c5b079740e28557931ba68}\label{class_student_a11b83bf608c5b079740e28557931ba68}} 
+\index{Student@{Student}!getInformation@{getInformation}}
+\index{getInformation@{getInformation}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getInformation()}{getInformation()}}
+{\footnotesize\ttfamily void Student\+::get\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_student_a410d5568f4c142de66c45ee035683c15}\label{class_student_a410d5568f4c142de66c45ee035683c15}} 
+\index{Student@{Student}!getNo\_of\_students@{getNo\_of\_students}}
+\index{getNo\_of\_students@{getNo\_of\_students}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getNo\_of\_students()}{getNo\_of\_students()}}
+{\footnotesize\ttfamily int Student\+::get\+No\+\_\+of\+\_\+students (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_student_a6a0eb5f79400f8bafa246b3ea80fe9a4}\label{class_student_a6a0eb5f79400f8bafa246b3ea80fe9a4}} 
+\index{Student@{Student}!getYear@{getYear}}
+\index{getYear@{getYear}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getYear()}{getYear()}}
+{\footnotesize\ttfamily QString Student\+::get\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_student_a54888c24615b9a5314fd4d610d3897a4}\label{class_student_a54888c24615b9a5314fd4d610d3897a4}} 
+\index{Student@{Student}!importFromCsvFile@{importFromCsvFile}}
+\index{importFromCsvFile@{importFromCsvFile}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{importFromCsvFile()}{importFromCsvFile()}}
+{\footnotesize\ttfamily void Student\+::import\+From\+Csv\+File (\begin{DoxyParamCaption}\item[{QString}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{class_student_ad64185e5d184ddaa6648da6aa4f414ec}\label{class_student_ad64185e5d184ddaa6648da6aa4f414ec}} 
+\index{Student@{Student}!removeCourseFromStudent@{removeCourseFromStudent}}
+\index{removeCourseFromStudent@{removeCourseFromStudent}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{removeCourseFromStudent()}{removeCourseFromStudent()}}
+{\footnotesize\ttfamily void Student\+::remove\+Course\+From\+Student (\begin{DoxyParamCaption}\item[{QString}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_student_ad5bb3334d9e15d5210876b8fef668f0c}\label{class_student_ad5bb3334d9e15d5210876b8fef668f0c}} 
+\index{Student@{Student}!setYear@{setYear}}
+\index{setYear@{setYear}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{setYear()}{setYear()}}
+{\footnotesize\ttfamily void Student\+::set\+Year (\begin{DoxyParamCaption}\item[{QString}]{year }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_student_a614dd9d2df88fd5838c32e25e92f5685}\label{class_student_a614dd9d2df88fd5838c32e25e92f5685}} 
+\index{Student@{Student}!course\_grads@{course\_grads}}
+\index{course\_grads@{course\_grads}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{course\_grads}{course\_grads}}
+{\footnotesize\ttfamily QMap$<$QString , float $>$ Student\+::course\+\_\+grads\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_student_a6c81c9bf59d0621063f131c7745284ec}\label{class_student_a6c81c9bf59d0621063f131c7745284ec}} 
+\index{Student@{Student}!id@{id}}
+\index{id@{id}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily QString Student\+::id\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_student_afccdec47b8494573fffd96de29ae8bf8}\label{class_student_afccdec47b8494573fffd96de29ae8bf8}} 
+\index{Student@{Student}!no\_of\_students@{no\_of\_students}}
+\index{no\_of\_students@{no\_of\_students}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{no\_of\_students}{no\_of\_students}}
+{\footnotesize\ttfamily int Student\+::no\+\_\+of\+\_\+students =0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_student_a377a9f2d155bb5ac02b3dcedaacdd504}\label{class_student_a377a9f2d155bb5ac02b3dcedaacdd504}} 
+\index{Student@{Student}!students@{students}}
+\index{students@{students}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{students}{students}}
+{\footnotesize\ttfamily QMap$<$ QString, \mbox{\hyperlink{class_student}{Student}} $>$ Student\+::students =\{\}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_student_ae407f416c573094e48fa6631b4f79910}\label{class_student_ae407f416c573094e48fa6631b4f79910}} 
+\index{Student@{Student}!year@{year}}
+\index{year@{year}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily QString Student\+::year\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{student_8h}{student.\+h}}\item 
+\mbox{\hyperlink{student_8cpp}{student.\+cpp}}\end{DoxyCompactItemize}

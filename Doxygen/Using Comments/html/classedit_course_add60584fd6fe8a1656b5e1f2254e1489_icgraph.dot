@@ -1,0 +1,11 @@
+digraph "editCourse::buildComboBox"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="editCourse::buildComboBox",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="buildComboBox with avilable days, halls and times"];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="editCourse::editCourse",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classedit_course.html#aba37eb0a6a65d6401dcb9e28a0a71081",tooltip="edit information of the course"];
+}

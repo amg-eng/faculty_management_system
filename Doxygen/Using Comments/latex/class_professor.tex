@@ -1,0 +1,234 @@
+\hypertarget{class_professor}{}\doxysection{Professor Class Reference}
+\label{class_professor}\index{Professor@{Professor}}
+
+
+{\ttfamily \#include $<$professor.\+h$>$}
+
+
+
+Inheritance diagram for Professor\+:
+% FIG 0
+
+
+Collaboration diagram for Professor\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_professor_ac6d4e54caf399a841888e60b54eed4c3}{Professor}} ()
+\item 
+\mbox{\hyperlink{class_professor_aa0f89b18fdf26e3dba50db36786fcc2f}{Professor}} (QString new\+First\+Name, QString new\+Second\+Name, QString new\+Phone\+Number, QString new\+Email, int new\+Age, QString new\+Title)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_professor_a235a643d9470fd9e2b753a3f6936c915}{Professor}} (QString new\+First\+Name, QString new\+Second\+Name, QString new\+Phone\+Number, QString new\+Email, int new\+Age, QString new\+Title, QSet$<$ QString $>$new\+Courses)
+\item 
+void \mbox{\hyperlink{class_professor_a9404f6aee82f6becea26b34c0c057f02}{settitle}} (const QString \&new\+Title)
+\item 
+const QString \& \mbox{\hyperlink{class_professor_af5be184b8be873c3ad91c4c715950050}{get\+Title}} () const
+\item 
+void \mbox{\hyperlink{class_professor_a1c4f7343ad3c24974800c14974d3a0ba}{add\+Course}} (QString new\+Course)
+\item 
+void \mbox{\hyperlink{class_professor_a95c900438472987639e4fd0aef66f564}{remove\+Course}} (QString removed)
+\item 
+const QSet$<$ QString $>$ \& \mbox{\hyperlink{class_professor_af8ffe0742d17d4846acf96990c252ea6}{get\+Courses}} () const
+\item 
+void \mbox{\hyperlink{class_professor_a64c8413bc8e0be06d1a3e5ac317ddccf}{add\+To\+Csv\+File}} ()
+\item 
+QString \mbox{\hyperlink{class_professor_a663e7e6f850869114d20bddfc4100537}{get\+Id}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_person_a0397c6f89fafc12e738923f612bc41a3}{Person}} ()
+\item 
+\mbox{\hyperlink{class_person_a27d593b7e8fe2a4a8f6e5d6a213c87a4}{Person}} (QString new\+First\+Name, QString new\+Second\+Name, QString new\+Phone\+Number, QString new\+Email, int new\+Age)
+\item 
+int \mbox{\hyperlink{class_person_a69b1611320c68967067747c91783d883}{get\+Age}} ()
+\item 
+void \mbox{\hyperlink{class_person_ad45f0876030e071957981ea71a557981}{set\+Age}} (int new\+Age)
+\item 
+QString \& \mbox{\hyperlink{class_person_ae38ba05864d3ee3bc55e6c6905a5d4c1}{get\+First\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_person_afb6a7dad679e73ca36eb8c0af39c458f}{set\+First\+Name}} (QString \&new\+First\+Name)
+\item 
+QString \& \mbox{\hyperlink{class_person_a2d91259305c82d847edfe63c3865de71}{get\+Second\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_person_aba23fed94508c4eefe53d58e51b6570b}{set\+Second\+Name}} (QString \&new\+Second\+Name)
+\item 
+QString \& \mbox{\hyperlink{class_person_adbc540af5e9b85c701081e164c2ba676}{get\+Phone\+Number}} ()
+\item 
+void \mbox{\hyperlink{class_person_a9b133a54cdc50d376a2f302417f04b10}{set\+Phone\+Number}} (QString \&new\+Phone\+Number)
+\item 
+QString \& \mbox{\hyperlink{class_person_aef114831d45fa79321ccaf5e114ac663}{get\+Email}} ()
+\item 
+void \mbox{\hyperlink{class_person_ab153296eecdb1d90e98b96c57ea19d88}{set\+Email}} (QString \&new\+Email)
+\item 
+QString \mbox{\hyperlink{class_person_ac12d93a1f835711e5608693bf4abe1bc}{get\+\_\+full\+\_\+name}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_professor_a3c9446a100b9bb3d62d2eb847664b06f}{export\+To\+Csv\+File}} (QString path)
+\begin{DoxyCompactList}\small\item\em export to Csv\+File \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_professor_a3d1d86e09c925414f30f4f52a8bab24b}{get\+No\+\_\+of\+\_\+professors}} ()
+\item 
+static void \mbox{\hyperlink{class_professor_a64d73b1d2845befc84aa62350ee465d5}{import\+From\+Csv\+File}} (QString path)
+\begin{DoxyCompactList}\small\item\em import from Csv\+File \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static QMap$<$ QString, \mbox{\hyperlink{class_professor}{Professor}} $>$ \mbox{\hyperlink{class_professor_a6299bf52ec435bba0c1d0fb0e515a190}{professors}} =\{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_person_aaccf91d74ec333ff725af78ffbe429f9}{first\+Name}}
+\item 
+QString \mbox{\hyperlink{class_person_a2518048e1cfb80c4414a506ccf406751}{second\+Name}}
+\item 
+QString \mbox{\hyperlink{class_person_a2e27c9f2755a43c8eae08c7c47cbf4f2}{phone\+Number}}
+\item 
+QString \mbox{\hyperlink{class_person_a72f5f93f2b969a0cadb985af14b85dd9}{email}}
+\item 
+int \mbox{\hyperlink{class_person_acf9db1a60683f40b20ae569d29852d69}{age}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_professor_ac6d4e54caf399a841888e60b54eed4c3}\label{class_professor_ac6d4e54caf399a841888e60b54eed4c3}} 
+\index{Professor@{Professor}!Professor@{Professor}}
+\index{Professor@{Professor}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{Professor()}{Professor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Professor\+::\+Professor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_professor_aa0f89b18fdf26e3dba50db36786fcc2f}\label{class_professor_aa0f89b18fdf26e3dba50db36786fcc2f}} 
+\index{Professor@{Professor}!Professor@{Professor}}
+\index{Professor@{Professor}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{Professor()}{Professor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Professor\+::\+Professor (\begin{DoxyParamCaption}\item[{QString}]{new\+First\+Name,  }\item[{QString}]{new\+Second\+Name,  }\item[{QString}]{new\+Phone\+Number,  }\item[{QString}]{new\+Email,  }\item[{int}]{new\+Age,  }\item[{QString}]{new\+Title }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+First\+Name} & = QString\+: preofessor first name \\
+\hline
+{\em new\+Second\+Name} & = QString\+: professor second name \\
+\hline
+{\em new\+Phone\+Number} & = QString\+: professor phone number \\
+\hline
+{\em new\+Email} & = QString\+: professor email \\
+\hline
+{\em new\+Age} & = int\+: professor age \\
+\hline
+{\em new\+Title=} & QString\+: professor title \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_professor_a235a643d9470fd9e2b753a3f6936c915}\label{class_professor_a235a643d9470fd9e2b753a3f6936c915}} 
+\index{Professor@{Professor}!Professor@{Professor}}
+\index{Professor@{Professor}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{Professor()}{Professor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Professor\+::\+Professor (\begin{DoxyParamCaption}\item[{QString}]{new\+First\+Name,  }\item[{QString}]{new\+Second\+Name,  }\item[{QString}]{new\+Phone\+Number,  }\item[{QString}]{new\+Email,  }\item[{int}]{new\+Age,  }\item[{QString}]{new\+Title,  }\item[{QSet$<$ QString $>$}]{new\+Courses }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_professor_a1c4f7343ad3c24974800c14974d3a0ba}\label{class_professor_a1c4f7343ad3c24974800c14974d3a0ba}} 
+\index{Professor@{Professor}!addCourse@{addCourse}}
+\index{addCourse@{addCourse}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{addCourse()}{addCourse()}}
+{\footnotesize\ttfamily void Professor\+::add\+Course (\begin{DoxyParamCaption}\item[{QString}]{new\+Course }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_professor_a64c8413bc8e0be06d1a3e5ac317ddccf}\label{class_professor_a64c8413bc8e0be06d1a3e5ac317ddccf}} 
+\index{Professor@{Professor}!addToCsvFile@{addToCsvFile}}
+\index{addToCsvFile@{addToCsvFile}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{addToCsvFile()}{addToCsvFile()}}
+{\footnotesize\ttfamily void Professor\+::add\+To\+Csv\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_professor_a3c9446a100b9bb3d62d2eb847664b06f}\label{class_professor_a3c9446a100b9bb3d62d2eb847664b06f}} 
+\index{Professor@{Professor}!exportToCsvFile@{exportToCsvFile}}
+\index{exportToCsvFile@{exportToCsvFile}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{exportToCsvFile()}{exportToCsvFile()}}
+{\footnotesize\ttfamily void Professor\+::export\+To\+Csv\+File (\begin{DoxyParamCaption}\item[{QString}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+export to Csv\+File 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_professor_af8ffe0742d17d4846acf96990c252ea6}\label{class_professor_af8ffe0742d17d4846acf96990c252ea6}} 
+\index{Professor@{Professor}!getCourses@{getCourses}}
+\index{getCourses@{getCourses}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{getCourses()}{getCourses()}}
+{\footnotesize\ttfamily const QSet$<$ QString $>$ \& Professor\+::get\+Courses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_professor_a663e7e6f850869114d20bddfc4100537}\label{class_professor_a663e7e6f850869114d20bddfc4100537}} 
+\index{Professor@{Professor}!getId@{getId}}
+\index{getId@{getId}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily QString Professor\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_professor_a3d1d86e09c925414f30f4f52a8bab24b}\label{class_professor_a3d1d86e09c925414f30f4f52a8bab24b}} 
+\index{Professor@{Professor}!getNo\_of\_professors@{getNo\_of\_professors}}
+\index{getNo\_of\_professors@{getNo\_of\_professors}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{getNo\_of\_professors()}{getNo\_of\_professors()}}
+{\footnotesize\ttfamily int Professor\+::get\+No\+\_\+of\+\_\+professors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_professor_af5be184b8be873c3ad91c4c715950050}\label{class_professor_af5be184b8be873c3ad91c4c715950050}} 
+\index{Professor@{Professor}!getTitle@{getTitle}}
+\index{getTitle@{getTitle}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{getTitle()}{getTitle()}}
+{\footnotesize\ttfamily const QString \& Professor\+::get\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_professor_a64d73b1d2845befc84aa62350ee465d5}\label{class_professor_a64d73b1d2845befc84aa62350ee465d5}} 
+\index{Professor@{Professor}!importFromCsvFile@{importFromCsvFile}}
+\index{importFromCsvFile@{importFromCsvFile}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{importFromCsvFile()}{importFromCsvFile()}}
+{\footnotesize\ttfamily void Professor\+::import\+From\+Csv\+File (\begin{DoxyParamCaption}\item[{QString}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+import from Csv\+File 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{class_professor_a95c900438472987639e4fd0aef66f564}\label{class_professor_a95c900438472987639e4fd0aef66f564}} 
+\index{Professor@{Professor}!removeCourse@{removeCourse}}
+\index{removeCourse@{removeCourse}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{removeCourse()}{removeCourse()}}
+{\footnotesize\ttfamily void Professor\+::remove\+Course (\begin{DoxyParamCaption}\item[{QString}]{removed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_professor_a9404f6aee82f6becea26b34c0c057f02}\label{class_professor_a9404f6aee82f6becea26b34c0c057f02}} 
+\index{Professor@{Professor}!settitle@{settitle}}
+\index{settitle@{settitle}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{settitle()}{settitle()}}
+{\footnotesize\ttfamily void Professor\+::settitle (\begin{DoxyParamCaption}\item[{const QString \&}]{new\+Title }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_professor_a6299bf52ec435bba0c1d0fb0e515a190}\label{class_professor_a6299bf52ec435bba0c1d0fb0e515a190}} 
+\index{Professor@{Professor}!professors@{professors}}
+\index{professors@{professors}!Professor@{Professor}}
+\doxysubsubsection{\texorpdfstring{professors}{professors}}
+{\footnotesize\ttfamily QMap$<$ QString, \mbox{\hyperlink{class_professor}{Professor}} $>$ Professor\+::professors =\{\}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{professor_8h}{professor.\+h}}\item 
+\mbox{\hyperlink{professor_8cpp}{professor.\+cpp}}\end{DoxyCompactItemize}
